@@ -1,0 +1,42 @@
+.sidebar{
+  background-color: #161437;
+  width: 100%;
+  .container_menu{
+    padding: 10px;
+    .links{
+      display: none;
+      li{
+        a{
+          color: #fff;
+        }
+      }
+    }
+    .logo{
+      h1{
+        color: #fff;
+      }
+    }
+  }
+  @media(min-width: 48em){
+    height: 100vh;
+    width: 290px;
+    .container_menu{
+      .links{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        li{
+          a{
+            font-size: 1.4vw;
+          }
+        }
+      }
+      .logo{
+        text-align: center;
+        h1{
+          font-size: 2.4vw;
+        }
+      }
+    }
+  }
+}
